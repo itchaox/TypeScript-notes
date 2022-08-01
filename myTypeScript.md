@@ -23,7 +23,7 @@
 
 * Array 类型：数组类型
 
-  * `const a: string[ ] = ['a', 'b', 'c']`
+  * `const a: string[] = ['a', 'b', 'c']`
   * `const a: Array<string> = ['a', 'b', 'c']`
 
 * object 类型：对象类型，用于描述对象，但不能获取数据和设置数据
@@ -134,8 +134,8 @@
 * 函数参数类型：声明函数时，限制函数参数类型
 
   * ```typescript
-    function num(num: number) {
-      console.log(num);
+    function num(num1: number) {
+      console.log(num1);
     }
     
     num(1)
