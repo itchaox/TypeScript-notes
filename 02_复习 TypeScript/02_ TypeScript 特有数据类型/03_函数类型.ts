@@ -4,7 +4,7 @@
  * @Author: wc
  * @Date: 2022-10-16 23:09:23
  * @LastEditors: wc
- * @LastEditTime: 2022-10-16 23:15:55
+ * @LastEditTime: 2022-10-17 17:21:05
  */
 
 // 目标: 声明一个求和函数, 入参为两个数值类型的参数, 返回值为一个数值类型的值
@@ -16,8 +16,8 @@
  */
 
 function sum(num1: number, num2: number): number {
-  return num1 + num2
+  return num1 + num2;
 }
 
-sum(123, 321) // 成功调用
-// sum("123", "321") // 失败调用: 入参类型不正确
+sum(123, 321); // 成功调用
+// sum("123", "321"); // 失败调用: 入参类型不正确
