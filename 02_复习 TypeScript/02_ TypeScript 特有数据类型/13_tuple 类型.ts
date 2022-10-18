@@ -4,7 +4,7 @@
  * @Author: wc
  * @Date: 2022-10-18 15:24:30
  * @LastEditors: wc
- * @LastEditTime: 2022-10-18 15:45:20
+ * @LastEditTime: 2022-10-18 21:40:08
  */
 
 /**
@@ -24,14 +24,16 @@
 // 目标: 封装部分 useState 函数
 
 function useState<T>(initValue: T): [T, (newValue: T) => void] {
-  let init = initValue;
+  let init = initValue
 
   function change(newValue: T) {
-    init = newValue;
+    init = newValue
   }
 
-  return [init, change];
+  return [init, change]
 }
 
-const [myName, setMyName] = useState("itchao"); // 明确知道, myName 类型是 string; setMyName 类型是 (newValue: string) => void
-const [age, setAge] = useState(23); // 明确知道, age 类型是 number; setAge 类型是 (newValue: number) => void
+const [myName, setMyName] = useState("itchao") // 明确知道, myName 类型是 string; setMyName 类型是 (newValue: string) => void
+const [age, setAge] = useState(23) // 明确知道, age 类型是 number; setAge 类型是 (newValue: number) => void
+
+export {}
